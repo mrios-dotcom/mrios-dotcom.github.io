@@ -7,20 +7,27 @@
   <meta name="author" content="">
   <title>Grid: Miranda Rios</title>
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
+  
+  <!--Favicon-->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
   <!-- Bootstrap core CSS -->
-  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="#">Miranda Rios</a>
+  <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="images/favicon.png" alt="Miranda Rios Logo" class="me-2 navbar-logo">
+  </a>
+  <a class="navbar-brand" href="index.html">Miranda Rios</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav me-auto">
       <li class="nav-item">
         <a class="nav-link" href="index.html">Home</a>
       </li>
@@ -32,6 +39,12 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
       </li>
     </ul>
   </div>
@@ -49,13 +62,27 @@
     <div class="box6">Six</div>
   </div>
 
+  <h2>Box Arrangement</h2>
+  <p>This page was created to practice using CSS Grid for layout design. The grid is made up of six boxes arranged in a flexible, responsive structure. Box 1 spans two rows to create a strong visual header, while Box 2 also spans two rows for balance. Box 6 is shorter to add variety and visual hierarchy. Spacing, borders, and color are used to make each box stand out and align clearly, showcasing how CSS Grid can create structured, organized layouts without relying on floats or complex positioning.</p>
+
+  <h2>Styling</h2>
+  <p>This project showcases a clean, responsive layout designed to highlight visual content in a simple and structured way. The larger first box draws the viewer’s attention immediately, creating a clear focal point while maintaining balance with the surrounding elements. This approach reflects modern web design principles—prioritizing both aesthetics and functionality. By combining thoughtful spacing, proportion, and responsiveness, the layout provides an engaging user experience that feels polished and intentional.</p>
+
 </main><!-- /.container -->
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <a href="index.html" class="footer-logo">
+      <img src="images/favicon.png" alt="Miranda Rios Logo">
+    </a>
+    <p>&copy; 2025 Miranda Rios. All rights reserved.</p>
+  </div>
+</footer>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
 </body>
 </html>
