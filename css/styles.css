@@ -3,8 +3,11 @@
 
 /*GLOBAL*/
 body {
-    padding-top: 5rem;
-
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+    padding-top: 5rem; 
+    line-height: 1.6;
+    background-color: #e8f5ff;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -13,15 +16,23 @@ h1,h2,h3,h4,h5,h6 {
 
 
 main {
-    padding: 20px;
+    padding: 30px;
 }
 main.container-fluid {
     width: 50%;
 }
 
+h2 {
+  font-size: 25px;
+  padding-top: 10px;
+  color: #2b3a55;
+}
+
+
 p {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 18px;
+    padding-top: 20px;
 }
 
 nav {
@@ -29,11 +40,11 @@ nav {
 }
 
 .navbar-brand {
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 button.navbar-toggler{
-margin-right: 10px;
+margin-right: 20px;
 }
 
 .home_2col {
@@ -41,9 +52,24 @@ margin-right: 10px;
 }
 
 img.dibley {
-    max-width: 100%
+    max-width: 70%
 }
 
+/* NAV LOGO*/
+.navbar-logo {
+  height: 35px;       
+  width: auto;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 0.75rem;
+  color:#81d5f9;
+}
 
 /* GRID PAGE (grid.html)*/
 .wrapper {
@@ -99,4 +125,210 @@ img.dibley {
   grid-row: 4 / 5;
   background-color: #e48bd3; /* pink */
   padding: 10px; /* smaller height */
+}
+
+/* ===== CAROUSEL PAGE   ====*/
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.50rem;
+  border-radius: 0.5rem;
+}
+.carousel-caption h5, 
+.carousel-caption p {
+  color: #fff;
+}
+
+/* ====  CONTACT PAGE STYLES === */
+
+.contact-page header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+}
+
+.contact-page header h1 {
+  font-size: 2.5rem;
+  color: #2b3a55;
+}
+
+.contact-page header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact-page h2 {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+        /* Accordion */
+.contact-page .accordion-button {
+  background-color: #e9eff6;
+  color: #2b3a55;
+  font-weight: 500;
+}
+
+.contact-page .accordion-button:not(.collapsed) {
+  background-color: #d4e0f5;
+}
+
+.contact-page .accordion-body {
+  background-color: #f9fafc;
+  color: #444;
+}
+
+      /* Form */
+.contact-page form label {
+  font-weight: 500;
+  color: #2b3a55;
+}
+
+.contact-page form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ccd5e0;
+  padding: 0.75rem;
+}
+
+.contact-page form .form-control:focus {
+  border-color: #2b3a55;
+  box-shadow: 0 0 0 0.2rem rgba(43, 58, 85, 0.2);
+}
+
+.contact-page button.btn-primary {
+  background-color: #2b3a55;
+  border: none;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-page button.btn-primary:hover {
+  background-color: #3c4b6e;
+}
+
+
+/* ================================
+   Responsive Design
+================================= */
+/* For desktops */
+
+@media (max-width: 768px) {
+  .contact-page header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-page {
+    padding: 0 1rem;
+  }
+}
+
+.contact-page main {
+  padding-top: 6rem; /* ensures content isn’t hidden under fixed navbar */
+}
+
+/* For tablets and small laptops */
+@media (max-width: 992px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 576px) {
+  .wrapper {
+    grid-template-columns: 1fr; /* Stack boxes */
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+/* BLOG PAGE SPECIFIC STYLES */
+.blog-page header h1 {
+  font-size: 2.5rem;
+  color: #2b3a55;
+}
+
+.blog-page header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.blog-page h2 {
+  color: #2b3a55;
+  margin-top: 0;
+}
+
+.blog-page .card {
+  border: 1px solid #e0e6ef;
+  border-radius: 10px;
+}
+
+.blog-page .card-title {
+  color: #2b3a55;
+  font-weight: 600;
+}
+
+.blog-page .card-text {
+  color: #000000;
+  font-size: 0.95rem;
+}
+
+.card {
+  border: 20px solid #ddd;
+  background-color: #81d5f996;
+}
+
+
+/* ===================== */
+/* Footer Styling        */
+/* ===================== */
+.site-footer {
+  background-color: #181818;        /* dark background */
+  color: #f5f5f5;               /* light text */
+  padding: 30px 10px;
+  text-align: center;
+  color: #81d5f9;
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+.footer-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.footer-logo img {
+  width: 40px;                 
+  height: auto;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.05);
+}
+
+.site-footer p {
+  font-size: 0.95rem;
+  opacity: 1;
+  margin: 0;
 }
